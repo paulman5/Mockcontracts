@@ -1,8 +1,7 @@
-// scripts/deployMockUSDC.js
 const hre = require("hardhat")
 
 async function main() {
-  const MockUSDC = await hre.ethers.getContractFactory("Mockusd")
+  const MockUSDC = await hre.ethers.getContractFactory("MockUSDC")
   const mockUSDC = await MockUSDC.deploy()
   await mockUSDC.deployed()
 

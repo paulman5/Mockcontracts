@@ -2,11 +2,11 @@
 const hre = require("hardhat")
 
 async function main() {
-  const MockUSDC = await hre.ethers.getContractFactory("Mockpepe")
-  const mockUSDC = await MockUSDC.deploy()
-  await mockUSDC.deployed()
+  const MockPEPE = await hre.ethers.getContractFactory("MockPEPE")
+  const mockPEPE = await MockPEPE.deploy()
+  await mockPEPE.deployed()
 
-  console.log("Mock Pepe deployed to:", mockpepe.address)
+  console.log("Mock Pepe deployed to:", mockPEPE.address)
 }
 
 main().catch((error) => {
