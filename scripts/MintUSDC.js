@@ -1,9 +1,9 @@
 async function main() {
   const recipient = "0x92b9baA72387Fb845D8Fe88d2a14113F9cb2C4E7"
-  const amount = ethers.utils.parseUnits("1000", 6) // Mint 1000 tokens
+  const amount = ethers.utils.parseUnits("1000000", 6) // Mint 1000 tokens
 
   // Address of your deployed MockUSDC contract:
-  const deployedAddress = "0x3E8DCfF66B2b305467Ea3327068B3a31624502d7"
+  const deployedAddress = "0xa2c8Bf2CB2351bC6Ae0F5492eb147B09077F183b"
 
   // Get the contract interface and attach it to the deployed address
   const mockusdc = await ethers.getContractAt("MockUSDC", deployedAddress)

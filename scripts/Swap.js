@@ -2,11 +2,11 @@
 const hre = require("hardhat")
 
 async function main() {
-  const mockPEPEAddress = "0x2Eac68d74c552E86b6EF6888b3E18817fAde1785" // Deployed MockPEPE address
-  const mockUSDCAddress = "0x3E8DCfF66B2b305467Ea3327068B3a31624502d7"
+  const mockUSDCAddress = "0x0cc2166DB4D31d1BaEA8c46Df757eC836b946FD8"
+  const mockPEPEAddress = "0xa2c8Bf2CB2351bC6Ae0F5492eb147B09077F183b"
 
   const MockSwap = await hre.ethers.getContractFactory("MockSwap")
-  const mockSwap = await MockSwap.deploy(mockPEPEAddress, mockUSDCAddress)
+  const mockSwap = await MockSwap.deploy(mockUSDCAddress, mockPEPEAddress)
   await mockSwap.deployed()
 
   console.log("Mock Swap deployed to:", mockSwap.address)

@@ -28,7 +28,7 @@ contract MockSwap is Ownable {
             "Transfer of tokenA failed"
         );
         require(
-            tokenB.transfer(msg.sender, amount),
+            tokenB.transfer(msg.sender, amount * 10 ** 12 * 2),
             "Transfer of tokenB failed"
         );
         emit Swap(msg.sender, address(tokenA), address(tokenB), amount);
@@ -41,7 +41,7 @@ contract MockSwap is Ownable {
             "Transfer of tokenB failed"
         );
         require(
-            tokenA.transfer(msg.sender, amount),
+            tokenA.transfer(msg.sender, (amount / 10 ** 12) / 2),
             "Transfer of tokenA failed"
         );
         emit Swap(msg.sender, address(tokenB), address(tokenA), amount);
