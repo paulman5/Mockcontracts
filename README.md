@@ -15,8 +15,7 @@
 
 ### MockSwap
 
-- Allows users to swap between MockPEPE and MockUSDC at a 1:1 rate.
-- Users must approve the contract to spend their tokens before swapping.
+- Allows users to swap between MockPEPE and MockUSDC at a 1:0.5 rate.
 - Two swap functions: `swapAToB` (PEPE to USDC) and `swapBToA` (USDC to PEPE).
 - Emits a `Swap` event for each swap.
 - The owner can withdraw tokens from the contract.
