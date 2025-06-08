@@ -1,5 +1,3 @@
-# Hardhat Boilerplate
-
 ## Smart Contract Functionalities
 
 ### MockUSDC (ERC20, 6 decimals)
