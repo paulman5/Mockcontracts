@@ -9,7 +9,7 @@ async function main() {
   const mockSwap = await MockSwap.deploy(mockUSDCAddress, mockPEPEAddress)
   await mockSwap.deployed()
 
-  console.log("Mock Swap deployed to:", mockSwap.address)
+  console.log("Mock Swap Address deployed to:", mockSwap.address)
 }
 
 main().catch((error) => {
